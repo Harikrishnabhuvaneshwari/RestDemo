@@ -6,7 +6,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages={"com.rest.demo.controller"})
+@ComponentScan(basePackages={"com.rest.demo.controller","com.rest.demo.rest"})
 public class RestDemoServletConfig {
 
 }

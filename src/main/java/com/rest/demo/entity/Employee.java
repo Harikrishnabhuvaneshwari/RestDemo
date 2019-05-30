@@ -12,13 +12,23 @@ public class Employee {
 	private int empSalary;
 	private List<String> languagesKnown;
 
+	public Employee() {
+
+	}
+	
+	public Employee(int empId, String empName, int empSalary, List<String> languagesKnown) {
+		this.empId = empId;
+		this.empName = empName;
+		this.empSalary = empSalary;
+		this.languagesKnown = languagesKnown;
+	}
 
 	@Override
 	public String toString() {
 		return "empId :"+empId+" empName : "+empName+" empSalary : "+empSalary
 				+" languagesKnown : "+languagesKnown;
 	}
-
+	
 	public int getEmpId() {
 		System.out.println("Woooohh I'm called by jackson.......");
 		return empId;
