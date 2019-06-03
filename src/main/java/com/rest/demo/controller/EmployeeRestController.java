@@ -8,6 +8,8 @@ import javax.annotation.PostConstruct;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -44,6 +46,11 @@ public class EmployeeRestController {
 			throw new EmployeeNotFoundException("Employee with id "+empId+" not found");
 		}
 		return employees.get(empId);
+	}
+
+	@PostMapping("/employees")
+	public void createEmployee(@RequestBody Employee employee){
+		employees.add(employee);
 	}
 
 }
