@@ -1,0 +1,14 @@
+What is Hibernate?
+* Framework for persisting/saving java objects into database.
+* It uses JDBC for all database communications.It handles all low level work regarding the
+database.
+
+ORM(Object-To-Relational Mapping):
+Mapping java objects on to the database table.
+
+Entity Class:
+Java class that is mapped to a database table.
+
+JPA:
+JPA annotations are used in mapping java objects to the database tables, columns etc.
+Hibernate is the most popular implement of JPA specification and provides some additional annotations. 
